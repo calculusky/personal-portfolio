@@ -1,17 +1,17 @@
 import React from "react";
 import {
-  ReCaptcha,
+  //ReCaptcha,
   Input,
   Textarea,
   Button,
-  CheckboxGroup,
+  //CheckboxGroup,
 } from "react-rainbow-components";
 import { FaUser } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import SuccessModal from "./SuccessModal";
 import { Text } from "./Multilanguage/Text";
 import { ThemeContext } from "../components/DarkMode/ThemeProvider";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
 const formID = process.env.REACT_APP_FORM_ID;
 
@@ -45,7 +45,7 @@ class ContactForm extends React.Component {
 
   isEmail(email) {
     console.log(email, '*****')
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) return true;
+    if (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email)) return true;
     return false;
   }
 
@@ -96,10 +96,11 @@ class ContactForm extends React.Component {
       userNameError: undefined,
       emailError: undefined,
       messageError: undefined,
-      recaptchaError: undefined,
+      //recaptchaError: undefined,
     };
     let reload = false;
-    const { userName, email, message, recaptcha, checkboxError } = this.state;
+    //const { userName, email, message, recaptcha, checkboxError } = this.state;
+    const { userName, email, message } = this.state;
     if (userName === undefined || userName === "") {
       error.userNameError = <Text tid="nameRequired" />;
       reload = true;
@@ -170,14 +171,14 @@ class ContactForm extends React.Component {
       emailError,
       message,
       messageError,
-      recaptchaError,
+      // recaptchaError,
       showModal,
-      values,
-      checkboxError,
+      //values,
+      //checkboxError,
     } = this.state;
 
     //const RECAPTCHA_APIKEY = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
-    const { theme } = this.context;
+    //const { theme } = this.context;
 
     return (
       <>

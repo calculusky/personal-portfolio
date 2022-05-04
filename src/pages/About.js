@@ -104,7 +104,7 @@ export default function About() {
               className="h-40 w-40 m-4 flex flex-col justify-center items-center cursor-pointer"
               onMouseEnter={() => setvisibleText("traveling")}
             >
-              <img src={globe} width="100px" height="100px" />
+              <img src={globe} width="100px" height="100px" alt="globe" />
               <Text tid="travelingHeading" />
             </div>
 
