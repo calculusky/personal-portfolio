@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+//import { Link } from "react-router-dom";
 import ContactForm from "../components/ContactForm";
 import { ThemeContext } from "../components/DarkMode/ThemeProvider";
-import { Text } from "../components/Multilanguage/Text";
-import Cookies from "js-cookie";
-import CookieConsent from "react-cookie-consent";
+// import { Text } from "../components/Multilanguage/Text";
+// import Cookies from "js-cookie";
+// import CookieConsent from "react-cookie-consent";
 
 export default function Contact() {
   const { theme } = React.useContext(ThemeContext);
-  const [hasGivenConsent, setHasGivenConsent] = useState(false);
-  const [showConsentAgain, setShowConsentAgain] = useState(false);
-  const cookie = Cookies.get("consentcookie");
+  // const [hasGivenConsent, setHasGivenConsent] = useState(false);
+  // const [showConsentAgain, setShowConsentAgain] = useState(false);
+  // const cookie = Cookies.get("consentcookie");
 
   // const checkForConsent = () => (cookie ? setHasGivenConsent(true) : null);
 

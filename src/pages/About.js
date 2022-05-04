@@ -65,7 +65,7 @@ export default function About() {
 
             <div className="md:hidden mb-8">
               {/* MOBILE VERSION, HIDDEN >md BREAKPOINT*/}
-              <p className="px-2 font-semibold font-normal text-base normal-case text-sm text-justify">
+              <p className="px-2 font-semibold normal-case text-sm text-justify">
                 <Text tid="codingText1" />
                 <br />
                 <Text tid="codingText2" />
@@ -77,13 +77,13 @@ export default function About() {
               className="h-40 w-40 m-4 flex flex-col justify-center items-center cursor-pointer"
               onMouseEnter={() => setvisibleText("football")}
             >
-              <img src={soccer} width="100px" height="100px" />
+              <img src={soccer} width="100px" height="100px" alt="soccer" />
               <Text tid="footballHeading" />
             </div>
 
             <div className="md:hidden mb-8">
               {/* MOBILE VERSION, HIDDEN >md BREAKPOINT*/}
-              <p className="px-2 font-semibold font-normal text-base normal-case text-sm text-justify">
+              <p className="px-2 font-semibold normal-case text-sm text-justify">
                 <Text tid="footballText1" />
                 <br /> <br />
                 <Text tid="footballText2" />
@@ -110,7 +110,7 @@ export default function About() {
 
             <div className="md:hidden mb-8">
               {/* MOBILE VERSION, HIDDEN >md BREAKPOINT*/}
-              <p className="px-2 font-semibold font-normal text-base normal-case text-sm text-justify">
+              <p className="px-2 font-semibold normal-case text-sm text-justify">
                 <Text tid="travelingText1" />
                 <br /> <br />
                 <Text tid="travelingText2" />
@@ -129,7 +129,7 @@ export default function About() {
             ) : null}
 
             {visibleText === "traveling" ? (
-              <p className="px-2 font-semibold font-normal text-base normal-case text-sm text-justify">
+              <p className="px-2 font-semibold normal-case text-sm text-justify">
                 <Text tid="travelingText1" />
                 <br />
                 <Text tid="travelingText2" />
@@ -138,7 +138,7 @@ export default function About() {
             ) : null}
 
             {visibleText === "football" ? (
-              <p className="px-2 font-semibold font-normal text-base normal-case text-sm text-justify">
+              <p className="px-2 font-semibold normal-case text-sm text-justify">
                 <Text tid="footballText1" />
                 <br />
                 <Text tid="footballText2" />
